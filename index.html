@@ -10,7 +10,16 @@
 <h1>💪 Tarek Fitness Platform</h1>
 <p>🔥 Your website is now LIVE</p>
 
-<button onclick="alert('Welcome Tarek!')">Start</button>
+<button onclick="goToPage()">Start</button>
+
+<script>
+function goToPage(){
+  document.body.innerHTML = `
+    <h1>🔥 Welcome Tarek</h1>
+    <p>This is your real platform start 🚀</p>
+  `;
+}
+</script>
 
 </body>
 </html>
