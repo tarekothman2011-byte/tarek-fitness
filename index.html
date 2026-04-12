@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Tarek Fitness</title>
 </head>
 
-<body style="background:black;color:white;text-align:center;margin-top:50px;font-family:Arial">
+<body style="background:black;color:white;font-family:Arial;text-align:center;margin-top:60px">
 
 <h1>💪 Tarek Fitness Platform</h1>
-<p>🔥 Your website is now LIVE</p>
 
-<button onclick="goToPage()">Start</button>
+<p>Welcome to your real platform 🚀</p>
+
+<button onclick="show()">Start</button>
+
+<div id="page" style="display:none;margin-top:30px">
+  <h2>Programs</h2>
+  <p>Bulk Program - Muscle Gain</p>
+  <p>Cut Program - Fat Loss</p>
+
+  <button onclick="hide()">Back</button>
+</div>
 
 <script>
-function goToPage(){
-  document.body.innerHTML = `
-    <h1>🔥 Welcome Tarek</h1>
-    <p>This is your real platform start 🚀</p>
-  `;
+function show(){
+  document.getElementById("page").style.display="block";
+}
+
+function hide(){
+  document.getElementById("page").style.display="none";
 }
 </script>
 
 </body>
 </html>
-<!-- update -->
